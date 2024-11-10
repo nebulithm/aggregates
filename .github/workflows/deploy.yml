@@ -22,8 +22,8 @@ jobs:
 
       - name: Set up Maven settings
         env:
-          MAVEN_USERNAME=${{ secrets.MAVEN_USERNAME }}
-          MAVEN_PASSWORD=${{ secrets.MAVEN_PASSWORD }}
+          MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
+          MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
         run: |
           echo username is ${MAVEN_USERNAME}
           mkdir -p ~/.m2
