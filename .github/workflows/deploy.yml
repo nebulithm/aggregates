@@ -22,6 +22,7 @@ jobs:
 
       - name: Set up Maven settings
         run: |
+          echo username is ${{ secrets.MAVEN_USERNAME }}
           mkdir -p ~/.m2
           echo "<settings>
                   <servers>
